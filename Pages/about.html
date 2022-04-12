@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/Css/about.css" />
+
+  <title>TALPA</title>
+</head>
+
+<body>
+  <header id="header">
+    <div id="header__navbar">
+      <nav class="container navbar navbar-expand-lg">
+        <div class="container p-0">
+          <a href="/index.html" id="logo_light"><img src="/Images/logo.png" alt="logo" /></a>
+          <a href="/index.html" class="hidden" id="logo_dark"><img src="/Images/logo_2.png" alt="logo" /></a>
+          <div class="collapse navbar-collapse">
+            <div class="d-flex w-100 justify-content-end">
+              <ul class="navbar-nav navbar-left">
+                <li class="nav-item">
+                  <a class="nav-link" href="/Pages/about.html">О КОМПАНИИ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/Pages/services.html">УСЛУГИ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/Pages/catalog.html">КАТАЛОГ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/Pages/contact.html">КОНТАКТЫ</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav language navbar-rigth">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Ru</a>
+                </li>
+                <li class="nav-item disabled">
+                  <a class="nav-link" href="#">En</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <nav class="sm-navbar">
+        <div class="container">
+          <div class="row">
+            <div class="col-4">
+              <ul class="navbar-nav sm-language navbar-rigth">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Ru</a>
+                </li>
+                <li class="nav-item disabled">
+                  <a class="nav-link" href="#">En</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-4 text-center"><a href="/index.html" class="sm-logo"><img src="/Images/sm-logo.png"
+                  alt="logo" /></a>
+            </div>
+            <div class="col-4">
+              <button onclick="myFunction()" class="sm-navbar-button">
+                <i class="fa-solid fa-bars active"></i>
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="line"></div>
+    <div id="navbarSupportedContent" class="sm-navbar-collapse">
+      <div class="container">
+        <ul class="navbar-nav pt-5">
+          <li class="sm-nav-item">
+            <a class="sm-nav-link" href="/Pages/about.html">О КОМПАНИИ</a>
+          </li>
+          <li class="sm-nav-item">
+            <a class="sm-nav-link" href="/Pages/services.html">УСЛУГИ</a>
+          </li>
+          <li class="sm-nav-item">
+            <a class="sm-nav-link" href="/Pages/catalog.html">КАТАЛОГ</a>
+          </li>
+          <li class="sm-nav-item">
+            <a class="sm-nav-link" href="/Pages/contact.html">КОНТАКТЫ</a>
+          </li>
+        </ul>
+        <div class="sm-conacts">
+          <div class="row">
+            <div class="col-6">
+              <div class="sm-conacts__contact">
+                <a href="tel:+998-99-353-23-70" class="conacts__phone">
+                  <i class="fa-solid fa-phone"></i>
+                  <p>+998 99 353 23 70</p>
+                </a>
+                <a href="mailto:info@talpa.uz" class="conacts__mail">
+                  <i class="fa-solid fa-envelope"></i>
+                  <p>info@talpa.uz</p>
+                </a>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="conacts__box">
+                <a href="#" class="conacts__job">Вакансии <span>></span></a>
+                <a href="#" class="conacts__job">Обратная связь <span>></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="home">
+      <div class="container">
+        <div class="row" id="home__content">
+          <div class="col-sm-12 col-lg-6">
+            <div class="home__contentTitle">VIK Engineering</div>
+          </div>
+          <div class="col-sm-12 col-lg-6">
+            <div class="home__contentText">
+              <p>
+                ИП ООО VIK ENGINERING является производственной компанией, которая специализируется на
+                крупноузловой
+                сборке шахтной
+                техники - погрузочно-доставочных машин и самосвалов под брендом TALPA.
+              </p>
+              <p>
+                Данный проект разработан в соответствии с Постановлением Президента Республики
+                Узбекистан «О мерах по
+                дальнейшему
+                развитию промышленной кооперации и расширению производства востребованной продукции»
+                №ПП-4302 от
+                01.05.2019.
+              </p>
+              <p>
+                Наша повседневная задача - достижение наибольшей пользы для наших клиентов,создавая
+                отечественный
+                продукт.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="hidden" id="slider">
+      <div class="container-fluid p-0">
+        <div class="hidden" id="slider_1">
+          <div class="Breadcrumb">
+            <p>Главная / О КОМПАНИИ </p>
+          </div>
+          <div class="container">
+            <div class="row mt-5">
+              <div class="col-sm-12 col-lg-6">
+                <img src="/Images/about_img.png" class="img-fluid" alt="...">
+              </div>
+              <div class="col-sm-12 col-lg-6">
+                <div class="slides">
+                  <div class="slides__title">
+                    <h1>Выпускаемая продукция</h1>
+                  </div>
+                  <div class="slides__text pt-4">
+                    <h3>Погрузочно-доставочные машины и самосвалы для подземных горных работ
+                    </h3>
+                    <p class="pt-2">Основные стандарты техники TALPA:</p>
+                    <div class="row slider__Box">
+                      <div class="col-6">
+                        <p>Конструкции шасси сделаны из высококачественной стали (ковши
+                          из
+                          стали
+                          Hardox 500)</p>
+                      </div>
+                      <div class="col-6">
+                        <p>Система блокировки опускания стрелы и рабочих органов при
+                          обслуживании</p>
+                      </div>
+                      <div class="col-6">
+                        <p>Усиленные конические подшипники и пылезащитные уплотнения в
+                          сочленении</p>
+                      </div>
+                      <div class="col-6">
+                        <p>OPS-FOPS кабина с сиденьем водителя на пневмоподвеске
+                          (обсуждается
+                          для каждой модели)</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hidden" id="slider_2">
+          <div class="Breadcrumb">
+            <p>Главная / О КОМПАНИИ </p>
+          </div>
+          <div class="container">
+            <div class="row mt-5">
+              <div class="col-6">
+                <img src="/Images/about_img.png" class="img-fluid" alt="...">
+              </div>
+              <div class="col-6">
+                <div class="slides">
+                  <div class="slides__title">
+                    <h1>Высоко - качественные комплектующие</h1>
+                  </div>
+                  <div class="slides__text pt-4">
+                    <h3>DANA / KESSLER / SAFIM / DEUTZ / CUMMINS</h3>
+                    <div class="row slider__Box pt-2">
+                      <div class="col-6">
+                        <p>Тормозная система SAHR - надежное торможение и продолжительный срок
+                          эксплуатации.</p>
+                      </div>
+                      <div class="col-6">
+                        <p>Блокировка 3-й или 4-й передачи в зависимости от модели</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hidden" id="slider_3">
+          <div class="Breadcrumb">
+            <p>Главная / О КОМПАНИИ </p>
+          </div>
+          <div class="container">
+            <div class="row mt-5">
+              <div class="col-6">
+                <img src="/Images/about_img.png" class="img-fluid" alt="...">
+              </div>
+              <div class="col-6">
+                <div class="slides">
+                  <div class="slides__title">
+                    <h1>Основные преимущества горно-шахтной техники TALPA</h1>
+                  </div>
+                  <div class="slides__text">
+                    <div class="row slider__Box pt-4">
+                      <div class="col-6">
+                        <p>Высокое качество и ценовая доступность</p>
+                      </div>
+                      <div class="col-6">
+                        <p>Средний срок производства и поставки техники - 3 месяца</p>
+                      </div>
+                      <div class="col-6">
+                        <p>Наличие центрального склада ЗИП и готовность организации склада
+                          запасных частей на объекте заказчика</p>
+                      </div>
+                      <div class="col-6">
+                        <p>Наличие сервисной службы в режиме 24/7 и предоставление расширенной
+                          гарантии;</p>
+                      </div>
+                      <div class="col-6">
+                        <p>Готовность предоставления техники для проведения опытно-промышленных
+                          испытаний;</p>
+                      </div>
+                      <div class="col-6">
+                        <p>Аренда техники по модели «все включено» и с полным Cервисным
+                          обслуживанием.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cards" id="cards">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-9 ms-md-auto">
+            <div class="card-group">
+              <div class="card" id="about__card_1">
+                <h5 class="card-title">Выпускаемая<br>продукция</h5>
+              </div>
+              <div class="card" id="about__card_2">
+                <h5 class="card-title">Высококачественные<br>комплектующие</h5>
+              </div>
+              <div class="card" id="about__card_3">
+                <h5 class="card-title">Основные<br>преимущества TALPA</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+  <div class="main">
+    <section>
+      <div class="Breadcrumb">
+        <p>Главная / О КОМПАНИИ </p>
+      </div>
+      <div class="container pb-3 p-0">
+        <div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12">
+                <img src="/Images/about_img.png" class="img-fluid" alt="...">
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="slides">
+                  <div class="slides__title mt-4">
+                    <h1>Выпускаемая продукция</h1>
+                  </div>
+                  <div class="slides__text mt-4">
+                    <h3>Погрузочно-доставочные машины и самосвалы для подземных горных работ
+                    </h3>
+                    <p class="pt-2">Основные стандарты техники TALPA:</p>
+                    <div class="row slider__Box">
+                      <div class="col-sm-12">
+                        <p>Конструкции шасси сделаны из высококачественной стали (ковши
+                          из
+                          стали
+                          Hardox 500)</p>
+                      </div>
+                      <div class="col-sm-12">
+                        <p>Система блокировки опускания стрелы и рабочих органов при
+                          обслуживании</p>
+                      </div>
+                      <div class="col-sm-12">
+                        <p>Усиленные конические подшипники и пылезащитные уплотнения в
+                          сочленении</p>
+                      </div>
+                      <div class="col-sm-12">
+                        <p>OPS-FOPS кабина с сиденьем водителя на пневмоподвеске
+                          (обсуждается
+                          для каждой модели)</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section>
+      <div class="container pb-3 p-0">
+        <div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12">
+                <img src="/Images/about_img.png" class="img-fluid" alt="...">
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="slides">
+                  <div class="slides__title mt-4">
+                    <h1>Высоко - качественные комплектующие</h1>
+                  </div>
+                  <div class="slides__text mt-4">
+                    <h3>DANA / KESSLER / SAFIM / DEUTZ / CUMMINS</h3>
+                    <div class="row slider__Box pt-2">
+                      <div class="col-sm-12">
+                        <p>Тормозная система SAHR - надежное торможение и продолжительный срок
+                          эксплуатации.</p>
+                      </div>
+                      <div class="col-sm-12">
+                        <p>Блокировка 3-й или 4-й передачи в зависимости от модели</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section>
+      <div class="container pb-3 p-0">
+        <div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12">
+                <img src="/Images/about_img.png" class="img-fluid" alt="...">
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="slides mt-3">
+                  <div class="slides__title">
+                    <h1>Основные преимущества горно-шахтной техники TALPA</h1>
+                  </div>
+                  <div class="slides__text">
+                    <div class="row slider__Box mt-3">
+                      <div class="col-sm-12">
+                        <p>Высокое качество и ценовая доступность</p>
+                      </div>
+                      <div class="col-sm-12">
+                        <p>Средний срок производства и поставки техники - 3 месяца</p>
+                      </div>
+                      <div class="col-sm-12">
+                        <p>Наличие центрального склада ЗИП и готовность организации склада
+                          запасных частей на объекте заказчика</p>
+                      </div>
+                      <div class="col-sm-12">
+                        <p>Наличие сервисной службы в режиме 24/7 и предоставление расширенной
+                          гарантии;</p>
+                      </div>
+                      <div class="col-sm-12">
+                        <p>Готовность предоставления техники для проведения опытно-промышленных
+                          испытаний;</p>
+                      </div>
+                      <div class="col-sm-12">
+                        <p>Аренда техники по модели «все включено» и с полным Cервисным
+                          обслуживанием.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <p class="footer__text">
+            ИП ООО «VIK Engineering» © 2022 - Все права защищены.
+          </p>
+        </div>
+        <div class="col-6 justify-content-sm-around">
+          <div class="footer__socials">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="/JS/script.js"></script>
+  <script>
+    const header = document.getElementById('header');
+    const card = document.querySelector(".card");
+    const card1 = document.getElementById("about__card_1");
+    const card2 = document.getElementById("about__card_2");
+    const card3 = document.getElementById("about__card_3");
+    const navbar = document.getElementById("header__navbar");
+    const logoDark = document.getElementById("logo_dark");
+    const logoLight = document.getElementById("logo_light");
+    const home = document.getElementById("home");
+    const slider = document.getElementById("slider");
+    const slider1 = document.getElementById("slider_1");
+    const slider2 = document.getElementById("slider_2");
+    const slider3 = document.getElementById("slider_3");
+    const cardActive = document.querySelector(".cardActive");
+    const line = document.querySelector(".line");
+
+
+    let cardStyle = `
+        color:#1D1D1D;
+        border: 1px solid rgba(29, 29, 29, 0.25);
+        `
+
+    const handlerCard = () => {
+      navbar.classList.add("color_dark", "bg-light");
+      logoLight.classList.add("hidden");
+      logoDark.classList.add('showSlider');
+      home.classList.add("hidden");
+      header.classList.add("bg-color-white");
+      slider.classList.remove("hidden");
+      card1.style = cardStyle;
+      card2.style = cardStyle;
+      card3.style = cardStyle;
+      line.classList.add('hidden');
+      console.log("hi");
+    };
+    card1.addEventListener("click", function onClick() {
+      slider1.classList.remove("hidden");
+      slider2.classList.add("hidden");
+      slider3.classList.add("hidden");
+      card1.classList.add("cardActive");
+      card2.classList.remove("cardActive");
+      card3.classList.remove("cardActive");
+      handlerCard();
+      console.log("card1");
+    });
+    card2.addEventListener("click", function onClick() {
+      slider2.classList.remove("hidden");
+      slider1.classList.add("hidden");
+      slider3.classList.add("hidden");
+      card1.classList.remove("cardActive");
+      card2.classList.add("cardActive");
+      card3.classList.remove("cardActive");
+      handlerCard();
+      console.log("card2");
+    });
+    card3.addEventListener("click", function onClick() {
+      slider3.classList.remove("hidden");
+      slider2.classList.add("hidden");
+      slider1.classList.add("hidden");
+      card1.classList.remove("cardActive");
+      card2.classList.remove("cardActive");
+      card3.classList.add("cardActive");
+      handlerCard();
+      console.log("card3");
+    });
+  </script>
+</body>
+
+</html>
